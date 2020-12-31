@@ -4,7 +4,7 @@
 	{ "handle": "filesystem" },
 	{ "src": "/", "dest": "/index.html"},
 	{ "src": "/favicon.ico", "dest": "/favicon.ico"},
-	{ "src": "/(.*)", "dest": "https://cdn.statically.io/img/$1", "headers": { "cache-control": "public, max-age=63072000"}},
+	{ "src": "/(.*)", "dest": "https://images.weserv.nl/?url=$1&h=1280", "headers": { "cache-control": "public, max-age=63072000"}},
 	{ "src": "/(.*)", "status": 404, "dest": "/404.jpg" }
   ]
 }
